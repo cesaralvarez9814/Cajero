@@ -13,17 +13,17 @@
             <h1  class="mx-auto">CesBBVA</h1>
         </div>
         
-        <form>
+        <form id="myForm" name="parameters" >
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label text-ligth">Usuario</label>
-              <input type="text" class="form-control" id="user" >
+              <label for="exampleInputEmail1" class="form-label">Usuario</label>
+              <input type="text" class="form-control" id="user" name="user" value="" >
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="password">
+              <label for="exampleInputPassword1" class="form-label" >Contraseña</label>
+              <input type="password" class="form-control" id="pass" name="pass" value="">
             </div>
            
-            <button type="submit" class="btn btn-primary" onclick="iniciarSesion()">Submit</button>
+            <button type="submit" class="btn btn-primary" >Submit</button>
           </form>
     </div>
     
