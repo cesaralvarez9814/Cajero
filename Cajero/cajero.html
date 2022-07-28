@@ -11,15 +11,6 @@
 <body class="bg-dark">
   <ul class="nav justify-content-end">
     <li class="nav-item">
-      <a class="nav-link" href="#">Consultar Saldo</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Ingresar Saldo</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link">Consultar Monto</a>
-    </li>
-    <li class="nav-item">
       <a class="nav-link" href="../Index/index.html">Cerrar Sesión</a>
     </li>
   </ul>
@@ -37,10 +28,11 @@
                     <button class="btn btn-primary" type="button" id="btnIngresar">Ingresar Saldo</button>
                 </div>
                 <div class="row p-3">
-                    <button class="btn btn-primary" type="button" id="btnRetirar">Retirar Monto</button>
+                    <button class="btn btn-primary" type="button" id="btnRetirar">Retirar Saldo</button>
                 </div>
             </div>
-            <div class="card-body" id="Consultar">
+            <!--Consultar Saldo-->
+            <div class="card-body oculto" id="consultar" name="ocultar">
               <div class="row">
                 <h1>Saldo:</h1>
               </div>
@@ -49,6 +41,36 @@
               </div>
               <div class="row">
                 <button class="btn btn-primary" type="button" id="btnAceptar">Aceptar</button>
+              </div>
+            </div>
+            <!--Ingresar Saldo-->
+            <div class="card-body oculto" id="ingresar">
+              <div class="row p-2">
+                <label for="cantidad">Ingresar Cantidad:</label>
+              </div>
+              <div class="row p-2">
+                <input type="number" maxlength="3" name="cantidad" id="ingresoCantidad" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+              </div>
+              <div class="row p-2">
+                <button class="btn btn-primary" type="button" id="btnIngresarSaldo">Ingresar</button>
+              </div>
+              <div class="row p-2">
+                <button class="btn btn-danger" type="button" id="btnCancelar">Cancelar</button>
+              </div>
+            </div>
+            <!--Retirar saldo-->
+            <div class="card-body oculto" id="retirar">
+              <div class="row p-2">
+                <label for="cantidad">Retirar:</label>
+              </div>
+              <div class="row p-2">
+                <input type="number" maxlength="3" name="cantidad" id="retiroCantidad" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+              </div>
+              <div class="row p-2">
+                <button class="btn btn-primary" type="button" id="btnRetirarSaldo">Retirar</button>
+              </div>
+              <div class="row p-2">
+                <button class="btn btn-danger" type="button" id="btnCancelarRetiro">Cancelar</button>
               </div>
             </div>
           </div>

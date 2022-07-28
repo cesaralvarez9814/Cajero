@@ -28,7 +28,7 @@ var user = [
     for(var i=0; i<arrUsers.length; i++){
         if(arrUsers[i].user == usuario.value && arrUsers[i].password == contrasena.value){
             url.pathname='../Cajero/cajero.html'
-            window.location.href=url + '?id=' + i+1;
+            window.location.href=url + '?id=' + i;
             bUsuario=true;
         }
     }
